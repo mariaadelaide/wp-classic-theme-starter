@@ -28,6 +28,19 @@ get_header();
 				<?php
 			endif;
 
+			if ( is_search() ) :
+				?>
+				<header class="page-header">
+					<h1 class="page-title">
+						<?php
+						/* translators: %s: search query. */
+						printf( esc_html__( 'Search Results for: %s', 'wp-classic-theme-starter' ), '<span>' . get_search_query() . '</span>' );
+						?>
+					</h1>
+				</header><!-- .page-header -->
+				<?php
+			endif;
+
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -53,5 +66,4 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();

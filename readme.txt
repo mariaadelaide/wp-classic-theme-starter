@@ -10,11 +10,11 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called WP_Classic_Theme_Starter, or underscores.
+A starter theme called WP_Classic_Theme_Starter.
 
 == Description ==
 
-Hi. I'm a starter theme called WP_Classic_Theme_Starter, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Hi. I'm a starter theme called WP_Classic_Theme_Starter. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
 == Installation ==
 
@@ -26,7 +26,7 @@ Hi. I'm a starter theme called WP_Classic_Theme_Starter, or underscores, if you 
 
 = Does this theme support any plugins? =
 
-WP_Classic_Theme_Starter includes support for WooCommerce and for Infinite Scroll in Jetpack.
+Not in particular.
 
 == Changelog ==
 
