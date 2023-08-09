@@ -10,6 +10,7 @@
  */
 
 ?>
+	</main><!-- #main -->
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
@@ -20,7 +21,7 @@
 			<span class="sep"> | </span>
 			<?php
 			/* translators: 1: Theme name, 2: Theme author. */
-			printf( esc_html__( 'Theme: %1$s by %2$s.', 'wp-classic-theme-starter' ), 'wp-classic-theme-starter', '<a href="https://automattic.com/">Automattic</a>' );
+			printf( esc_html__( 'Theme: %1$s by %2$s.', 'wp-classic-theme-starter' ), 'WP_Classic_Theme_Starter', '<a href="https://mariaadelaide.com/">Maria Adelaide</a>' );
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

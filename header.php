@@ -25,16 +25,8 @@
 <div id="page" class="site">
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
 			$wp_classic_theme_starter_description = get_bloginfo( 'description', 'display' );
 			if ( $wp_classic_theme_starter_description || is_customize_preview() ) :
 				?>
@@ -53,3 +45,5 @@
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+
+	<main id="primary" class="site-main">
