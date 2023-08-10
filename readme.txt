@@ -30,7 +30,7 @@ Not in particular.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 1.0 - Aug 10 2023 =
 * Initial release
 
 == Credits ==
