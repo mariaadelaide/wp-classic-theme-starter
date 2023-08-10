@@ -6,12 +6,12 @@
         "WordPress",
         "Themes"
     ],
-    "homepage": "https://github.com/Automattic/_s",
+    "homepage": "https://github.com/mariaadelaide/wp-classic-theme-starter",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
-            "name": "Contributors",
-            "homepage": "https://github.com/Automattic/_s/graphs/contributors"
+            "name": "Maria Adelaide",
+            "homepage": "https://mariaadelaide.com"
         }
     ],
     "require": {
@@ -29,8 +29,8 @@
         "make-pot": "wp i18n make-pot . languages/wp-classic-theme-starter.pot"
     },
     "support": {
-        "issues": "https://github.com/Automattic/_s/issues",
-        "source": "https://github.com/Automattic/_s"
+        "issues": "https://github.com/mariaadelaide/wp-classic-theme-starter/issues",
+        "source": "https://github.com/mariaadelaide/wp-classic-theme-starter"
     },
     "config": {
         "allow-plugins": {

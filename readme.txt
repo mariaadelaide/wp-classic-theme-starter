@@ -1,7 +1,7 @@
 === WP_Classic_Theme_Starter ===
 
-Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Contributors: mariaadelaide
+Tags: custom-menu, featured-images, translation-ready
 
 Requires at least: 4.5
 Tested up to: 5.4
