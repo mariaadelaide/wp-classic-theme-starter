@@ -1,8 +1,6 @@
 # wp-classic-theme-starter
 A starter for WordPress classic themes, based on [_s/underscores](https://underscores.me).
 
-**Warning:** This starter theme is still under initial development and still not recommended to use in real projects.
-
 # Usage
 
 Clone or download this repository, change its name to something else (like, say, `megatherium-is-awesome`), and then you'll need to do a six-step find and replace **(case-sensitive)** on the name in all the templates.
@@ -38,3 +36,9 @@ $ npm install
 - `npm run lint:scss` : checks all SASS files against [CSS Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/).
 - `npm run lint:js` : checks all JavaScript files against [JavaScript Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/).
 - `npm run bundle` : generates a .zip archive for distribution, excluding development and system files.
+
+# Maintainers/Who to talk
+
+For questions about about this project or issues, you can reach out to:
+
+- Pedro Santa ([pedro@mariaadelaide.com](mailto:pedro@mariaadelaide.com))
