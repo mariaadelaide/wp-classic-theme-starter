@@ -9,7 +9,7 @@
 
 ?>
 
-<?php if( is_singular() ) : ?>
+<?php if ( is_singular() ) : ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
