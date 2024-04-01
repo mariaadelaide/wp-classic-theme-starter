@@ -13,9 +13,7 @@
  */
 
 get_header();
-?>
 
-<?php
 if ( have_posts() ) :
 
 	if ( is_search() ) :
@@ -33,7 +31,6 @@ if ( have_posts() ) :
 
 	/* Start the Loop */
 	while ( have_posts() ) :
-	
 		?>
 		<ul>
 		<?php
@@ -46,7 +43,6 @@ if ( have_posts() ) :
 			* called content-___.php (where ___ is the Post Type name) and that will be used instead.
 			*/
 		get_template_part( 'template-parts/index-content', get_post_type() );
-		
 		?>
 		</ul>
 		<?php
@@ -55,42 +51,36 @@ if ( have_posts() ) :
 
 	the_posts_navigation();
 
+elseif ( is_home() && current_user_can( 'publish_posts' ) ) :
+	?>
+	<h1><?php esc_html_e( 'Nothing Found', 'wp-classic-theme-starter' ); ?></h1>
+	<?php
+	printf(
+		'<p>' . wp_kses(
+			/* translators: 1: link to WP admin new post page. */
+			__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'wp-classic-theme-starter' ),
+			array(
+				'a' => array(
+					'href' => array(),
+				),
+			)
+		) . '</p>',
+		esc_url( admin_url( 'post-new.php' ) )
+	);
+
+elseif ( is_search() ) :
+	?>
+	<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'wp-classic-theme-starter' ); ?></p>
+	<?php
 else :
-
-	if ( is_home() && current_user_can( 'publish_posts' ) ) :
-		?>
-		<h1><?php esc_html_e( 'Nothing Found', 'wp-classic-theme-starter' ); ?></h1>
-		<?php
-		printf(
-			'<p>' . wp_kses(
-				/* translators: 1: link to WP admin new post page. */
-				__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'wp-classic-theme-starter' ),
-				array(
-					'a' => array(
-						'href' => array(),
-					),
-				)
-			) . '</p>',
-			esc_url( admin_url( 'post-new.php' ) )
-		);
-
-	elseif ( is_search() ) :
-		?>
-		<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'wp-classic-theme-starter' ); ?></p>
-		<?php
-	else :
-		?>
-		<p>
-			<?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for.', 'wp-classic-theme-starter' ); ?>
-			<?php if ( !is_home() ) : ?>
-			<a href="<?php echo get_bloginfo( 'wpurl' ) ?>"><?php _e( 'Go to homepage' , 'wp-classic-theme-starter' ); ?></a>.
-			<?php endif; ?>
-		</p>
-		<?php
-	endif;
-
+	?>
+	<p>
+		<?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for.', 'wp-classic-theme-starter' ); ?>
+		<?php if ( ! is_home() ) : ?>
+		<a href="<?php echo esc_url( get_bloginfo( 'wpurl' ) ); ?>"><?php esc_html_e( 'Go to homepage', 'wp-classic-theme-starter' ); ?></a>.
+		<?php endif; ?>
+	</p>
+	<?php
 endif;
-?>
 
-<?php
 get_footer();
