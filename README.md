@@ -23,6 +23,18 @@ $ composer install
 $ npm install
 ```
 
+## Development enviroment
+
+For a local development environment you can use [@wordpress/env](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/).
+
+This starter theme is configured to work with @wordpress/env, you just need to make sure you meet its prerequisites and installation.
+
+```sh
+$ wp-env start
+```
+
+For more information on how to use @wordpress/env please [refer to the documentation](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/#usage).
+
 # Available CLI commands
 
 `wp-classic-theme-starter` comes packed with CLI commands tailored for WordPress theme development :
